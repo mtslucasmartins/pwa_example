@@ -18,7 +18,17 @@ export class AppComponent implements OnInit {
   // };
 
   constructor(private swUpdate: SwUpdate,
-              private swPush: SwPush) {
+    private swPush: SwPush) {
+    if (swPush.isEnabled) {
+      swPush
+        .requestSubscription({
+          serverPublicKey: this.VAPID_PUBLIC_KEY
+        })
+        .then(subscription => {
+          // send subscription to the server
+        })
+        .catch(console.error);
+    }
   }
 
   public subscribeToNotifications(): void {
