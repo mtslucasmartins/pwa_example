@@ -1,6 +1,6 @@
 {
-  "name": "pwa-zapcontabil",
-  "short_name": "pwa-zapcontabil",
+  "name": "Ottimizza Zap Contábil",
+  "short_name": "ZapContábil",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
